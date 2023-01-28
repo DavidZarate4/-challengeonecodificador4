@@ -1,3 +1,16 @@
+body{
+    background: #435170;
+}
+
+header{
+    background-color: #5F8BC2;
+    padding: 20px 0;
+}
+
+.titulo{
+    margin: 10px;
+}
+
 body,.boton,#mensaje{
     font-family: 'Teko', sans-serif;
 }
@@ -7,14 +20,73 @@ body h1{
     font-size: 3em;
 }
 
-.mensaje{
-    width: 100%;
+main{
+    background: linear-gradient(#5F8BC2, #435170);
+}
+
+#mensaje{
+    width: 70%;
+    height: 400px;
     font-size: 1em;
+    display: inline-block;
+    margin: 10px;
+}
+
+.clave{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.clave li{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
 }
 
 .boton{
     display: inline-block;
-    padding: 10px;
-    margin: 5px 5px;
+    padding: 10px 10%;
+    margin: 20px 10px;
     font-size: 1.5em;
+}
+
+footer{
+    background: #435170;
+}
+
+.final{
+    color: #FFFFFF;
+    font-size: 12px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 480px){
+    
+    #mensaje{
+        width: 90%;
+        height: 200px;
+    }
+
+    .clave{
+        display: block;
+        padding: 0 auto;
+        width: 25%;
+    }
+
+    .clave li{
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .boton{
+        display: block;
+    }
 }
